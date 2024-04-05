@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+    background-color: gray;
+}
+
+.container {
+    background-color: white;
+    height: 300px;
+    border: 2px solid black;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 30px;
+    overflow-y: scroll;
+}
+
+.loading-container {
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.search-data {
+    margin-top: 10px;
+    height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Styles for large screens (width >= 1024px) */
+@media (min-width: 1024px) {
+    .container {
+      width: 80%;
+    }
+  }
+  
+  /* Styles for medium screens (width between 768px and 1023px) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+      width: 90%;
+    }
+  }
+  
+  /* Styles for small screens (width less than 768px) */
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+  }
+  
